@@ -1,0 +1,7 @@
+[package]
+name = "brainative"
+version = "0.1.0"
+authors = ["Sam Rankin <sam.rankin@me.com>"]
+
+[dependencies]
+forkengine = { git = "https://github.com/samrankin1/forkengine.git" }
