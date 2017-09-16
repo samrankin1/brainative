@@ -1,7 +1,6 @@
 extern crate forkengine;
 
 use std::io;
-use std::str;
 use std::ops::Range;
 
 use forkengine::Runtime;
@@ -215,5 +214,6 @@ fn main() {
 		Err(_) => final_output = format!("{:?}", product.output)
 	}
 
+	println!("executed {} instructions in {:.2} ms", product.executions, (product.time as f64 / 1000000.0) as f64);
 	println!("program result: {}", final_output);
 }
